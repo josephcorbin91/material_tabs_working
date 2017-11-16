@@ -22,8 +22,11 @@
                 layout="@layout/toolbar_dashboard" />
         </LinearLayout>
 
+
+
+
         <FrameLayout
-            android:id="@+id/container_body"
+            android:id="@+id/content_fragment_placeholder"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@+id/container_toolbar"
@@ -249,7 +252,7 @@
 
     <fragment
         android:id="@+id/fragment_navigation_drawer"
-        android:name="pictorious.com.dashboard.drawer.FragmentDrawer"
+        android:name="info.androidhive.materialtabs.Dashboard.drawer.FragmentDrawer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="start"
