@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fragmentTabBarHeight"
+        android:layout_below="@+id/container_body"
+        app:tabGravity="fill"
+        android:tabStripEnabled="false"
+        app:tabMode="fixed">
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tabItem0"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:icon="@drawable/selector_tab_home"/>
+        <android.support.design.widget.TabItem
+            android:id="@+id/tabItem1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:icon="@drawable/battle24" />
+
+
+
+    </android.support.design.widget.TabLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/challengeLayout"
+                android:layout_height="250dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/challengeImage"
+                    android:src="@drawable/three"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:paddingTop="15dp"
+                    android:paddingLeft="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingRight="15dp"
+                    android:layout_marginRight="-15dp"
+                    android:layout_marginTop="-15dp"
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    android:gravity="left"
+                    android:textSize="@dimen/text_size_18"
+                    android:text="$125\nvalue"
+                    android:textColor="@color/white"
+                    android:background="@drawable/round_button"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/challengeTitle"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="125dp"
+                    android:layout_marginLeft="@dimen/leftRightMargins"
+                    android:textSize="@dimen/text_size_26"
+                    android:text="Cold Spot \nChallenge"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/challengeHashTag"
+                    android:layout_marginLeft="@dimen/leftRightMargins"
+
+                    android:textColor="@color/colorAccent"
+                    android:text="#COLDSPOTCHALLENGE"
+                    android:layout_below="@+id/challengeTitle"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/prizesOne"
+                    android:layout_marginLeft="@dimen/leftRightMargins"
+
+                    android:textColor="@color/white"
+                    android:text="Most Likes, Most shares"
+                    android:layout_below="@+id/challengeHashTag"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="@dimen/leftRightMargins"
+                    android:layout_below="@id/prizesOne"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:id="@+id/hostedBy"
+                    android:text="Hosted by Joseph Corbin"/>
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/two"
+                    android:layout_marginTop="190dp"
+                    android:layout_alignParentRight="true"
+                    />
+
+
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="@dimen/heightOfIconBarBelowImages">
+
+                <ImageView
+                    android:layout_width="@dimen/dimensionOfIconBelowImages"
+                    android:layout_height="@dimen/dimensionOfIconBelowImages"
+                    android:src="@drawable/replyarrow24"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/replyIcon"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="101"
+                    android:layout_toRightOf="@+id/replyIcon"
+                    android:id="@+id/shareCount"/>
+                <ImageView
+                    android:layout_width="@dimen/dimensionOfIconBelowImages"
+                    android:layout_height="@dimen/dimensionOfIconBelowImages"
+                    android:src="@drawable/love24"
+                    android:layout_toRightOf="@id/shareCount"
+                    android:id="@+id/loveIcon"
+                    android:scaleType="centerInside"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/loveIcon"
+                    android:text="20"
+
+                    android:id="@+id/heartQuantity"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/nubmerOfChallengers"
+                    android:text="1.2k challengers"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="2dp"
+                    android:layout_alignParentLeft="false"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/colorGray0" />
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout"
+
+                    android:layout_width="150dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true">
+                    <cn.iwgang.countdownview.CountdownView
+                        android:id="@+id/cv_countdownView"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/colorAccent"
+                        app:isShowDay="true"
+                        app:isShowHour="true"
+                        app:isShowMillisecond="false"
+                        app:isShowMinute="true"
+                        app:isShowSecond="false"
+                        app:suffixGravity="center"
+                        app:suffixTextColor="@color/white"
+                        app:suffixTextSize="20sp"
+                        app:timeTextColor="@color/white"
+                        app:timeTextSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_below="@id/cv_countdownView"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="days"
+                            android:textColor="@color/colorGray0"
+
+                            android:textSize="@dimen/text_size_13" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+
+                            android:text="hrs"
+                            android:textColor="@color/colorGray0"
+                            android:textSize="@dimen/text_size_13" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="mins"
+                            android:textColor="@color/colorGray0"
+                            android:textSize="@dimen/text_size_13" />
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="2dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="false"
+
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="false"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/colorGray0" />
+
+
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_marginTop="@dimen/standardHeighBelowDivider"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Entered by ASDASDASDA, asdsad"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Share a photo by showing off your style for a \n chance to win a 250$ Nordstrom gift card and a \n Facetime call with bella Hadid"
+                />
+
+
+            <RelativeLayout
+
+                android:layout_marginTop="@dimen/standardHeighBelowDivider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="@dimen/standardButtonHeigt"
+                    android:id="@+id/enterChallengeButton"
+                    android:layout_centerHorizontal="true"
+                    android:text="Enter Challenge"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:background="@drawable/round_button_green"
+
+                    />
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/standardHeighBelowDivider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                <View
+                    android:layout_width="@dimen/semiCompleteDividerLength"
+                    android:layout_height="2dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/colorGray0"
+                    android:layout_centerVertical="true"
+
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="CHALLENGE ENTRIES"/>
+                <View
+                    android:layout_width="@dimen/semiCompleteDividerLength"
+                    android:layout_alignParentLeft="true"
+                    android:layout_height="2dp"
+                    android:background="@color/colorGray0"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+
+                    />
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>
+
+
+
+

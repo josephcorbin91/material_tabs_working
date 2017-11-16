@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@color/colorWhite">
+
+
+
+    <ImageView
+        android:layout_alignParentLeft="true"
+
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/border"
+        android:layout_width="150dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/computer"
+        android:scaleType="centerInside"
+        android:layout_centerVertical="true"
+        android:layout_height="150dp" />
+
+
+
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@id/imageView"
+        android:layout_height="fill_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Apple Macbook Pro"
+            android:id="@+id/ItemTitle"
+            android:lines="1"
+            android:textSize="@dimen/text_size_15"
+            android:textColor="@color/colorBlack"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Black"
+            android:lines="1"
+            android:layout_below="@id/ItemTitle"
+            android:id="@+id/ItemDescription"
+            android:textSize="@dimen/text_size_13"
+            android:textColor="@color/colorGray1"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="1000p"
+            android:layout_marginBottom="20dp"
+            android:lines="1"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/ItemPoints"
+            android:textSize="@dimen/text_size_13"
+            android:textColor="@color/colorAccent"
+            android:layout_height="wrap_content" />
+
+
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_alignParentRight="true"
+        android:layout_width="50dp"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/plusButton"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/icons8plus"/>
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="1"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_size_24"
+            android:gravity="center"
+            android:id="@+id/quantityOfItem"/>
+
+        <ImageView
+            android:id="@+id/negativeButton"
+
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:scaleType="centerInside"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/icons8subtract"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

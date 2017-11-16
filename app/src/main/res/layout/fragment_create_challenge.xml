@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="225dp"
+                    android:background="@color/colorBlack">
+
+                    <ImageView
+                        android:id="@+id/createChallengeButton"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/icons8camerafilled50" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center_vertical"
+                        android:text="#"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/text_size_35" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@null"
+                        android:gravity="center_vertical|right"
+                        android:text="     Write your hashtag "
+                        android:textColor="@color/colorGray1"
+                        android:textSize="@dimen/text_size_24" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorGray0" />
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:gravity="left|top"
+                    android:text="Write a caption for your challenge..."
+                    android:textSize="@dimen/text_size_13" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorGray0" />
+
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/list_view_item_with_icon_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center"
+                        android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                        android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+                        android:text="Open / Group"
+                        android:textAppearance="?android:attr/textAppearanceListItemSmall" />
+
+                    <Switch
+                        android:id="@+id/list_view_item_with_icon_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="5dp"
+
+                        android:gravity="center_vertical"
+
+
+                        android:padding="7dp"
+                        android:paddingEnd="?android:attr/listPreferredItemPaddingEnd" />
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorGray0" />
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center"
+                        android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                        android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+                        android:text="Free / Wager"
+                        android:textAppearance="?android:attr/textAppearanceListItemSmall" />
+
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="5dp"
+
+                        android:gravity="center_vertical"
+
+
+                        android:padding="7dp"
+                        android:paddingEnd="?android:attr/listPreferredItemPaddingEnd" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorGray0" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10dp"
+                        android:background="@color/transparent"
+                        android:hint="Send to"
+                        android:textColor="@color/colorGray0"
+                        android:textColorHint="@color/colorGray0"
+                        android:textSize="@dimen/text_size_13" />
+
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentRight="true"
+
+                        android:padding="7dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/icons8searchfilled50" />
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorGray0" />
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:layout_width="80dp"
+                                android:layout_height="80dp">
+
+                                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:src="@drawable/actor1" />
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="right|bottom"
+                                    android:src="@drawable/favorite_star_icon" />
+
+
+                            </FrameLayout>
+
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="Adam465" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:layout_width="80dp"
+                                android:layout_height="80dp">
+
+                                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:src="@drawable/actor2" />
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+
+                                    android:layout_gravity="right|bottom"
+                                    android:src="@drawable/favorite_star_icon" />
+
+
+                            </FrameLayout>
+
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+
+                                android:gravity="center"
+                                android:text="John465" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:layout_width="80dp"
+                                android:layout_height="80dp">
+
+                                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:src="@drawable/actor3" />
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="right|bottom"
+                                    android:src="@drawable/favorite_star_icon" />
+
+
+                            </FrameLayout>
+
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="To5" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:layout_width="80dp"
+                                android:layout_height="80dp">
+
+                                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:src="@drawable/actor4" />
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="right|bottom"
+                                    android:src="@drawable/favorite_star_icon" />
+
+
+                            </FrameLayout>
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="Ben465" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:layout_width="80dp"
+                                android:layout_height="80dp">
+
+                                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:src="@drawable/actor5" />
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="right|bottom"
+                                    android:src="@drawable/favorite_star_icon" />
+
+
+                            </FrameLayout>
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="Ron465" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:layout_width="80dp"
+                                android:layout_height="80dp">
+
+                                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:src="@drawable/actor1" />
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="right|bottom"
+                                    android:src="@drawable/favorite_star_icon" />
+
+
+                            </FrameLayout>
+
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+
+
+                                android:text="Adam465" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:layout_width="80dp"
+                                android:layout_height="80dp">
+
+                                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:src="@drawable/actor1" />
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="right|bottom"
+                                    android:src="@drawable/favorite_star_icon" />
+
+
+                            </FrameLayout>
+
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+
+                                android:text="Adam465" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:layout_width="80dp"
+                                android:layout_height="80dp">
+
+                                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:src="@drawable/actor1" />
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="right|bottom"
+                                    android:src="@drawable/favorite_star_icon" />
+
+
+                            </FrameLayout>
+
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+
+                                android:gravity="center"
+                                android:text="Adam465" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:layout_width="80dp"
+                                android:layout_height="80dp">
+
+                                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:src="@drawable/actor1" />
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="right|bottom"
+                                    android:src="@drawable/favorite_star_icon" />
+
+
+                            </FrameLayout>
+
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="Adam465" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </HorizontalScrollView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorGray0" />
+
+                <Button
+                    android:id="@+id/cancelButton"
+                    android:layout_width="60dp"
+                    android:layout_height="@dimen/standardButtonHeigt"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/standardHeighBelowDivider"
+                    android:background="@null"
+                    android:text="Cancel" />
+            </LinearLayout>
+
+
+        </ScrollView>
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+
+

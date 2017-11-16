@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:paddingTop="24dp"
+    app:contentInsetEnd="0dp"
+    app:contentInsetLeft="0dp"
+    app:contentInsetRight="0dp"
+    app:contentInsetStart="0dp">
+
+
+
+    <RelativeLayout
+        android:id="@+id/layoutToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorGray0"
+            android:layout_alignParentBottom="true"
+            />
+        <ImageView
+            android:id="@+id/imgvwDrawer"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_margin="5dp"
+            android:padding="7dp"
+            android:src="@drawable/icons8menu_filled50"
+            android:visibility="gone" />
+
+
+        <ImageView
+            android:id="@+id/imgvwBack"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_margin="5dp"
+            android:padding="7dp"
+            android:src="@drawable/icons8backto70"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txtTitleToolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Settings"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imgvwHeaderIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imgvwRightSide"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:padding="7dp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imgvwRightSideProfile"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:src="@drawable/icons8maleuserfilled70"
+
+            android:padding="7dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/imgvwRightSideSelectButton"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:text="Select"
+            android:textSize="@dimen/text_size_18"
+            android:textColor="@color/colorBlack"
+            android:padding="7dp"
+            android:visibility="gone" />
+
+
+
+        <ImageView
+            android:id="@+id/imgvwRightSideSend"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:src="@drawable/icons8sent50"
+
+            android:padding="7dp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imgvwRightSideCreate"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:src="@drawable/icons8create50"
+
+            android:padding="7dp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imgvwRightSideSettings"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:src="@drawable/icons8settingsfilled50"
+
+            android:padding="7dp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite">
+    <LinearLayout android:orientation="horizontal" android:layout_height="40dp" android:layout_width="fill_parent">
+        <LinearLayout android:layout_marginLeft="10dp" android:layout_gravity="center" android:layout_weight="1" android:layout_height="fill_parent" android:layout_width="0dp" android:orientation="horizontal" >
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_gravity="center"
+                android:layout_height="30dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/camera24"
+                android:id="@+id/postPhotoVideo"
+                android:backgroundTint="@android:color/transparent"
+                android:background="@android:color/transparent"                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Post Photo / Video"
+
+                />
+
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop="5dp"
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:background="#cccccc"/>
+
+
+        <LinearLayout
+            android:id="@+id/layoutCreateChallenge"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:paddingLeft="20dp"
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/imgbtnCreateChallenge"
+                android:layout_width="30dp"
+                android:layout_gravity="center"
+                android:layout_height="30dp"
+                android:scaleType="centerInside"
+                android:backgroundTint="@android:color/transparent"
+                android:background="@android:color/transparent"
+                android:src="@drawable/battle24"/>
+
+            <TextView
+                android:id="@+id/txtCreateChallenge"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create Challenge"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="1dp"
+
+        android:background="#cccccc"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/shareUpdateEditText"
+        android:backgroundTint="@android:color/transparent"
+        android:hint="Share an update here ..."/>
+
+
+
+</LinearLayout>

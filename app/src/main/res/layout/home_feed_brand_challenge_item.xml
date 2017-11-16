@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <FrameLayout
+
+            android:id="@+id/frame_layout"
+            android:layout_width="40dp"
+            android:layout_alignParentLeft="true"
+
+            android:layout_height="40dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/actor1"/>
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="right|bottom"
+                android:src="@drawable/favorite_star_icon"/>
+
+
+        </FrameLayout>
+
+
+        <TextView
+            android:layout_toRightOf="@+id/frame_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textSize="16sp"
+            android:gravity="center"
+
+
+            android:text="Adam456" />
+
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="centerCrop"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:backgroundTint="@android:color/transparent"
+            android:background="@android:color/transparent"
+            android:src="@drawable/more_button" />
+
+
+        <!--
+        Title description number of days
+
+        Create a realm object.
+        -->
+
+
+    </RelativeLayout>
+<RelativeLayout
+
+android:layout_width="match_parent"
+android:id="@+id/challengeLayout"
+android:layout_height="250dp">
+
+<ImageView
+    android:layout_width="match_parent"
+    android:scaleType="centerCrop"
+    android:id="@+id/challengeImage"
+    android:src="@drawable/three"
+    android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/challengeValue"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="-15dp"
+        android:layout_marginTop="-15dp"
+        android:background="@drawable/round_button"
+        android:gravity="left"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp"
+        android:text="$125\nvalue"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_18" />
+
+    <TextView
+        android:id="@+id/challengeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/leftRightMargins"
+        android:layout_marginTop="125dp"
+        android:text="Cold Spot \nChallenge"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_26" />
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/challengeHashTag"
+    android:layout_marginLeft="@dimen/leftRightMargins"
+
+    android:textColor="@color/colorAccent"
+    android:text="#COLDSPOTCHALLENGE"
+    android:layout_below="@+id/challengeTitle"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/prizesOne"
+    android:layout_marginLeft="@dimen/leftRightMargins"
+
+    android:textColor="@color/white"
+    android:text="Most Likes, Most shares"
+    android:layout_below="@+id/challengeHashTag"/>
+
+    <TextView
+        android:id="@+id/hostName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/prizesOne"
+        android:layout_marginLeft="@dimen/leftRightMargins"
+        android:text="Hosted by Joseph Corbin"
+        android:textColor="@color/white" />
+
+<ImageView
+    android:layout_width="80dp"
+    android:layout_height="40dp"
+    android:src="@drawable/two"
+    android:layout_marginTop="190dp"
+    android:layout_alignParentRight="true"
+    />
+
+
+
+
+</RelativeLayout>
+
+<RelativeLayout
+android:layout_width="match_parent"
+android:orientation="horizontal"
+android:layout_height="@dimen/heightOfIconBarBelowImages">
+
+<ImageView
+    android:layout_width="@dimen/dimensionOfIconBelowImages"
+    android:layout_height="@dimen/dimensionOfIconBelowImages"
+    android:src="@drawable/replyarrow24"
+    android:scaleType="centerCrop"
+    android:id="@+id/replyIcon"
+    />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:text="101"
+    android:layout_toRightOf="@+id/replyIcon"
+    android:id="@+id/shareCount"/>
+<ImageView
+    android:layout_width="@dimen/dimensionOfIconBelowImages"
+    android:layout_height="@dimen/dimensionOfIconBelowImages"
+    android:src="@drawable/love24"
+    android:layout_toRightOf="@id/shareCount"
+    android:id="@+id/loveIcon"
+    android:scaleType="centerInside"
+
+    />
+
+    <TextView
+        android:id="@+id/likesCount"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/loveIcon"
+        android:text="20" />
+
+
+    <TextView
+        android:id="@+id/enteredChallengersQuantity"
+
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:text="1.2k challengers" />
+
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentLeft="false"
+            android:layout_centerHorizontal="false"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorGray0" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/daysCount"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/round_button_green"
+
+                android:gravity="center_horizontal"
+                android:text="5/ndays"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/enteredChallengers"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/standardHeighBelowDivider"
+        android:gravity="center_horizontal"
+        android:text="Entered by ASDASDASDA, asdsad" />
+
+    <TextView
+        android:id="@+id/challengeDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="18dp"
+        android:gravity="center_horizontal"
+        android:text="Share a photo by showing off your style for a \n chance to win a 250$ Nordstrom gift card and a \n Facetime call with bella Hadid" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/standardHeighBelowDivider"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+
+            <Button
+                android:id="@+id/buttonText1"
+                android:layout_width="150dp"
+                android:layout_height="@dimen/standardButtonHeigt"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="21dp"
+
+                android:background="@drawable/round_button_white"
+                android:gravity="center"
+                android:text="View More"
+                android:textColor="@color/colorAccent" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+
+            <Button
+                android:id="@+id/buttonText2"
+                android:layout_width="150dp"
+                android:layout_height="@dimen/standardButtonHeigt"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="22dp"
+
+                android:background="@drawable/round_button_green"
+                android:gravity="center"
+                android:text="Enter Challenge"
+                android:textColor="@color/white"
+                android:textColorLink="@color/colorWhite" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+android:layout_marginTop="@dimen/standardHeighBelowDivider"
+
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+    >
+
+
+    <View
+        android:layout_width="match_parent"
+
+        android:layout_height="2dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@color/colorGray0"
+
+        />
+
+
+
+</RelativeLayout>
+
+</LinearLayout>

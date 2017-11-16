@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <TextView
+        android:text=" Please read these terms of use carefully\n because they affect your legal rights\n and responsibilities."
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:id="@+id/privacy_policy_text_top"
+        android:layout_marginLeft="10dp"
+
+        android:textSize="@dimen/text_size_15"
+        android:textColor="@color/colorBlack"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:id="@+id/lineSeparator"
+        android:layout_below="@+id/privacy_policy_text_top"
+        android:background="@color/colorGray0"
+        />
+
+
+    <TextView
+        android:text=" By accessing or using Pictorious.com, the Site\n and Mobile application and the servies offered\n by Pictorious, the API, email notifications,\n applications, buttons , widgets, ads, and"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/lineSeparator"
+
+        android:textSize="@dimen/text_size_15"
+        android:textColor="@color/colorGray0"/>
+
+
+</RelativeLayout>

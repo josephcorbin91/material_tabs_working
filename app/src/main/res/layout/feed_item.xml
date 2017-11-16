@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite">
+
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <FrameLayout
+
+            android:id="@+id/frame_layout"
+            android:layout_width="40dp"
+            android:layout_alignParentLeft="true"
+
+            android:layout_height="40dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/actor1"/>
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="right|bottom"
+                android:src="@drawable/favorite_star_icon"/>
+
+
+        </FrameLayout>
+
+
+        <TextView
+            android:layout_toRightOf="@+id/frame_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textSize="16sp"
+            android:gravity="center"
+
+
+            android:text="Adam456" />
+
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="centerCrop"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:backgroundTint="@android:color/transparent"
+            android:background="@android:color/transparent"
+            android:src="@drawable/more_button" />
+
+
+        <!--
+        Title description number of days
+
+        Create a realm object.
+        -->
+
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/actor1"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/favorite_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:backgroundTint="@android:color/transparent"
+            android:padding="5dp"
+
+
+            android:src="@drawable/ic_favorite" />
+        <TextView
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:id="@+id/likeCounter"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="20"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/share_button"
+            android:layout_gravity="center"
+            android:adjustViewBounds="false"
+            android:background="@android:color/transparent"
+            android:backgroundTint="@android:color/transparent"
+            android:padding="5dp"
+
+
+            android:src="@drawable/ic_share" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12"
+            android:padding="5dp"
+            android:id="@+id/shareCounter"
+            android:layout_gravity="center"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sent24"
+            android:padding="5dp"
+            android:layout_gravity="center"
+
+            android:id="@+id/sent_button"
+            android:backgroundTint="@android:color/transparent"
+            android:background="@android:color/transparent"
+
+
+            />
+
+
+
+    </LinearLayout>
+
+
+
+
+    <View
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="1dp"
+
+        android:background="#cccccc"/>
+
+
+        <TextView
+            android:id="@+id/captionText"
+            android:text="This is the coolest place I could possibly find."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#cccccc"
+            android:textSize="12sp"
+            android:typeface="sans"
+            android:textStyle="normal"/>
+    <TextView
+        android:id="@+id/commentCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="1385 comments"
+        android:layout_gravity="left"
+        android:textSize="12sp"
+        android:typeface="sans"
+        android:textStyle="normal"/>
+
+    <com.github.curioustechizen.ago.RelativeTimeTextView
+        android:id="@+id/creationDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="left"
+        android:textSize="12sp"
+        android:typeface="sans"
+        android:textStyle="normal"
+
+        />
+
+    <View
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="1dp"
+
+        android:background="#cccccc"/>
+
+
+</LinearLayout>

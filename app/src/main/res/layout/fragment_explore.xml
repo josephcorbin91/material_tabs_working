@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/heightOfRowWithSearchBar">
+
+
+            <EditText
+                android:layout_alignParentLeft="true"
+                android:layout_width="match_parent"
+                android:textSize="@dimen/text_size_13"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/transparent"
+                android:textColor="@color/colorGray0"
+                android:textColorHint="@color/colorGray0"
+                android:hint="Search Pictorious"/>
+
+
+
+
+
+
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:layout_width="45dp"
+                android:padding="7dp"
+
+                android:scaleType="centerInside"
+                android:layout_height="45dp"
+                android:src="@drawable/icons8searchfilled50"
+                />
+
+
+        </RelativeLayout>
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="2dp"
+    android:background="@color/colorGray0"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:id="@+id/winnersImageView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/actor1"
+                android:scaleType="centerCrop"
+
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LUCKY WINNERS"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="100dp"
+                android:layout_marginLeft="15dp"
+                android:textSize="@dimen/text_size_13"
+
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="150dp">
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="150dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/storeImageView"
+                android:layout_height="150dp"
+                android:src="@drawable/shoes"
+                android:scaleType="centerCrop"
+
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STORE"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="100dp"
+                android:layout_marginLeft="15dp"
+                android:textSize="@dimen/text_size_13"
+
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="150dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/leaderBoardImageView"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/sports"
+                android:scaleType="centerCrop"
+
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LEADERBOARD"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="100dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/text_size_13"
+
+
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_height="50dp"
+        android:layout_width="match_parent">
+
+
+        <View
+            android:layout_alignParentLeft="true"
+            android:layout_width="100dp"
+            android:layout_height="2dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/separator1"
+            android:background="@color/colorGray0"/>
+
+
+        <TextView
+            android:layout_width="100dp"
+            android:text="TRENDING"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_alignParentRight="true"
+            android:id="@+id/separator2"
+            android:layout_centerVertical="true"
+
+            android:layout_width="100dp"
+            android:layout_height="2dp"
+            android:background="@color/colorGray0"/>
+
+
+
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/explore_fragment_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" />
+
+
+</LinearLayout>

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <ImageView
+
+            android:id="@+id/profileBackgroundImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/actor3" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profilePicture"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="145dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/actor2" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="195dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profileBackgroundImage"
+            android:layout_toEndOf="@+id/profilePicture"
+            android:text="Jessie413"
+            android:textSize="@dimen/text_size_24" />
+
+        <LinearLayout
+            android:layout_width="195dp"
+
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/username"
+            android:layout_below="@+id/username"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/numberOfEntries"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="25" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:text="entries" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/followerCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="200" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:lines="1"
+                    android:text="followers" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/followingCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="120" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:text="following" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        />
+
+
+        <View
+            android:id="@+id/profileFirstDiv"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="300dp"
+            android:background="@color/colorGray0" />
+
+        <TextView
+            android:id="@+id/userTotalPoints"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/profileFirstDiv"
+            android:layout_marginRight="-15dp"
+            android:background="@drawable/round_button_green"
+            android:gravity="bottom"
+            android:paddingLeft="10dp"
+            android:text="700p"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_18" />
+
+        <TextView
+            android:id="@+id/profileCaption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/userTotalPoints"
+            android:layout_alignBottom="@+id/userTotalPoints"
+            android:layout_alignStart="@+id/accountCreationDate"
+            android:text="Make up and food! \nNew Jersey 9 years young"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/accountCreationDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profileFirstDiv"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:text="Member since 2017"
+            android:textSize="@dimen/text_size_16" />
+
+        <View
+            android:id="@+id/profileSecondDiv"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="410dp"
+            android:background="@color/colorGray0" />
+
+        <ImageView
+            android:id="@+id/messageButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/profileSecondDiv"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/icons_message" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="2dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/profileSecondDiv"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/messageButton"
+            android:background="@color/colorGray0" />
+
+
+        <LinearLayout
+            android:id="@+id/linearLayoutLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/profileSecondDiv"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/profileLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/username"
+                android:layout_below="@+id/profileSecondDiv"
+                android:layout_gravity="center_horizontal"
+                android:text="Level 6"
+                android:textColor="@color/colorAccent" />
+
+            <com.daimajia.numberprogressbar.NumberProgressBar
+                android:id="@+id/number_progress_bar"
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/view"
+
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/pointsUntilNextLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="700 / 1000"
+
+                android:textColor="@color/colorAccent" />
+
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/profileThirdDiv"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/linearLayoutLevel"
+            android:background="@color/colorGray0" />
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="fixed"
+            app:tabTextColor="@color/colorBlack"
+            app:tabIndicatorColor="@color/colorAccent"
+            app:tabIndicatorHeight="0.5dp"
+            android:layout_below="@+id/profileThirdDiv"
+            app:tabGravity="fill"  />
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_below="@id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"/>
+        <!--
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/profileThirdDiv"
+            android:tabStripEnabled="false"
+            app:tabGravity="fill"
+            app:tabMode="fixed">
+
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabItem2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/icons8user" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabItem3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/icons8calendar" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabItem4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/battle24" />
+
+        </android.support.design.widget.TabLayout>
+
+-->
+    </RelativeLayout>
+
+
+</ScrollView>

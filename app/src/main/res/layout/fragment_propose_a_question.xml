@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/colorWhite">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_height="225dp">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="225dp"
+                    android:id="@+id/firstRelativeLayout"
+                    android:background="@color/colorBlack"
+                    >
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/propose_a_question_left_camera"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/icons8camerafilled50"/>
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/colorGray0"/>
+
+
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="225dp"
+                    android:background="@color/colorBlack"
+                    >
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/propose_a_question_right_camera"
+
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/icons8camerafilled50"/>
+
+
+
+
+                </RelativeLayout>
+
+
+
+
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorGray0"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="Title of Post"
+                android:background="@null"
+                android:textSize="@dimen/text_size_16"
+                android:paddingLeft="10dp"
+                android:layout_height="50dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorGray0"
+                />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="Description"
+
+                android:textSize="@dimen/text_size_13"
+
+                android:gravity="top"
+                android:background="@null"
+                android:paddingLeft="10dp"
+                android:layout_height="80dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorGray0"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_height="120dp">
+
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:textSize="@dimen/text_size_13"
+
+                    android:gravity="top"
+                    android:background="@null"
+                    android:hint="Answer A"
+
+
+                    android:layout_height="120dp"/>
+
+
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorGray0"/>
+
+
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:textSize="@dimen/text_size_13"
+
+                    android:gravity="top"
+                    android:background="@null"
+                    android:hint="Answer B"
+
+
+                    android:layout_height="120dp"/>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorGray0"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_height="36dp">
+
+
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Single"
+
+
+                    android:id="@+id/singleButton"
+                    android:background="@color/white"
+                    android:textColor="@color/colorGray1"
+
+                    android:layout_height="36dp">
+
+
+
+
+
+                </Button>
+
+
+
+                <Button
+                    android:text="Double"
+                    android:textColor="@color/white"
+                    android:background="@color/colorAccent"
+                    android:layout_width="0dp"
+                    android:id="@+id/doubleButton"
+
+                    android:layout_weight="1"
+                    android:layout_height="36dp">
+
+
+
+                </Button>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorGray0"
+                />
+
+
+
+            <Button
+                android:layout_marginTop="@dimen/standardHeighBelowDivider"
+                android:layout_gravity="center_horizontal"
+                android:text="Propose Question"
+                android:textColor="@color/white"
+                android:background="@drawable/round_button_green"
+                android:layout_width="300dp"
+                android:id="@+id/proposeAQuestionButton"
+
+                android:layout_marginBottom="@dimen/standardHeighBelowDivider"
+                android:layout_weight="1"
+                android:layout_height="36dp"/>
+
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>
+
+
+
+

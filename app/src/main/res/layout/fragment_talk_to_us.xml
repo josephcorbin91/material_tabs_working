@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <EditText
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="20dp"
+        android:background="@null"
+        android:textColorHint="@color/colorGray0"
+        android:id="@+id/submit_message_edit_text"
+        android:hint="Write your message here..."
+
+        android:textSize="@dimen/text_size_13"
+        android:textColor="@color/colorGray0"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/submit_message_edit_text"
+        android:background="@color/colorGray0"
+        />
+
+
+    <Button
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorWhite"
+        android:layout_alignParentBottom="true"
+        android:text="Submit"
+        android:elevation="2dp"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginBottom="30dp"
+        android:layout_width="320dp"
+        android:layout_height="36dp" />
+
+
+</RelativeLayout>

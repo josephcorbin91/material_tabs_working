@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutMenuItemRow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/imgvwIconMenuItem"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/drawer_home_icon"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/txtTitleMenuItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/imgvwIconMenuItem"
+        android:textSize="@dimen/text_size_18"
+        android:textColor="@color/colorWhite"/>
+</RelativeLayout>
