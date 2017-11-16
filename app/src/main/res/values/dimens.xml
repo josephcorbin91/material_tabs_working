@@ -1,9 +1,11 @@
 <resources>
-    <!-- Default screen margins, per the Android Design guidelines. -->
-    <dimen name="activity_horizontal_margin">16dp</dimen>
-    <dimen name="activity_vertical_margin">16dp</dimen>
-    <dimen name="tab_max_width">264dp</dimen>
-    <dimen name="tab_padding_bottom">16dp</dimen>
-    <dimen name="tab_label">14sp</dimen>
-    <dimen name="custom_tab_layout_height">72dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="leftRightMargins">10dp</dimen>
+    <dimen name="heightOfIconBarBelowImages">40dp</dimen>
+    <dimen name="heightOfRowWithSearchBar">45dp</dimen>
+    <dimen name="dimensionOfIconBelowImages">20dp</dimen>
+    <dimen name="standardButtonHeigt">40dp</dimen>
+    <dimen name="standardHeighBelowDivider">20dp</dimen>
+    <dimen name="fragmentTabBarHeight">40dp</dimen>
+    <dimen name="semiCompleteDividerLength">100dp</dimen>
 </resources>
